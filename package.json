@@ -43,5 +43,13 @@
     "eslint": "^9.25.0",
     "eslint-config-expo": "~10.0.0"
   },
+  "codegenConfig": {
+    "name": "AppSpecs",
+    "type": "modules",
+    "jsSrcsDir": "specs",
+    "android": {
+      "javaPackageName": "com.anonymous.test_mnn.specs"
+    }
+  },
   "private": true
 }
