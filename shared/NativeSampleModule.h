@@ -2,8 +2,8 @@
 
 #include <AppSpecsJSI.h>
 #include <jsi/jsi.h>
-#include "NativeFaceDetector.h"
 #include <memory>
+#include "NativeFaceDetector.h"
 
 namespace facebook::react {
 

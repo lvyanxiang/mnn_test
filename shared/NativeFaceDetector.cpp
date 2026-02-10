@@ -1,12 +1,21 @@
 #include "NativeFaceDetector.h"
-#include <android/log.h>
+
+// 平台特定的头文件和日志宏
+#ifdef __ANDROID__
+  #include <android/log.h>
+  #define LOGI(...) __android_log_print(ANDROID_LOG_INFO, TAG, __VA_ARGS__)
+  #define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, TAG, __VA_ARGS__)
+#else
+  #include <cstdio>
+  #define LOGI(fmt, ...) printf("[INFO] " fmt "\n", ##__VA_ARGS__)
+  #define LOGE(fmt, ...) fprintf(stderr, "[ERROR] " fmt "\n", ##__VA_ARGS__)
+#endif
+
 #include <algorithm>
 #include <cmath>
 #include <iostream>
 
 #define TAG "NativeFaceDetector"
-#define LOGI(...) __android_log_print(ANDROID_LOG_INFO, TAG, __VA_ARGS__)
-#define LOGE(...) __android_log_print(ANDROID_LOG_ERROR, TAG, __VA_ARGS__)
 
 // 使用 OpenCV 的 MAX/MIN 宏，不再重复定义
 #define Clip(x, y) (x < 0 ? 0 : (x > y ? y : x))
