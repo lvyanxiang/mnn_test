@@ -49,7 +49,12 @@
     "jsSrcsDir": "specs",
     "android": {
       "javaPackageName": "com.anonymous.test_mnn.specs"
-    }
+    },
+    "ios": {
+        "modulesProvider": {
+          "NativeSampleModule":  "NativeSampleModuleProvider"
+        }
+     }
   },
   "private": true
 }

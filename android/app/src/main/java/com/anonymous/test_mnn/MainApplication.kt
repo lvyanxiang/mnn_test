@@ -2,6 +2,7 @@ package com.anonymous.test_mnn
 
 import android.app.Application
 import android.content.res.Configuration
+import android.util.Log
 
 import com.facebook.react.PackageList
 import com.facebook.react.ReactApplication
@@ -40,6 +41,11 @@ class MainApplication : Application(), ReactApplication {
 
   override fun onCreate() {
     super.onCreate()
+
+    // 提取模型文件到应用缓存目录（native库由ModelExtractor init块自动加载）
+    val modelPath = ModelExtractor.getModelPath(this)
+    Log.i("MainApplication", "Model path: $modelPath")
+
     DefaultNewArchitectureEntryPoint.releaseLevel = try {
       ReleaseLevel.valueOf(BuildConfig.REACT_NATIVE_RELEASE_LEVEL.uppercase())
     } catch (e: IllegalArgumentException) {
