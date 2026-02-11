@@ -345,6 +345,92 @@ jni deep-learning inference mobile computer-vision expo
 
 ---
 
-## License
+## License & Legal Notice
 
-MIT
+### License
+
+This project is licensed under the **MIT License**.
+
+### ⚠️ Important Attribution & Legal Notice
+
+**Third-Party Components Used:**
+
+| Component | License | Source | Copyright Owner |
+|-----------|----------|---------|----------------|
+| **MNN Inference Engine** | Apache 2.0 | [Alibaba Group](https://github.com/alibaba/MNN) | Alibaba Group |
+| **OpenCV** | Apache 2.0 | [OpenCV Team](https://opencv.org/) | OpenCV.org |
+| **UltraFace Model** | ⚠️ See original repo | [Linzaer](https://github.com/Linzaer/Ultra-Light-Fast-Generic-Face-Detector-1MB) | Linzaer |
+| **React Native** | MIT | [Meta](https://reactnative.dev/) | Meta Platforms, Inc. |
+| **Expo** | MIT | [Expo](https://expo.dev/) | Expo (Expo Technologies, Inc.) |
+
+**Original Implementation (This Repository):**
+- **License**: MIT License
+- **Copyright**: [Your Name/Organization]
+- **Status**: Open source, educational purpose
+
+### 🚨 Infringement Report & Removal Policy
+
+**If you believe any part of this repository infringes on your rights:**
+
+Please contact the repository owner immediately via:
+- **GitHub Issues**: Create an issue with the "infringement" label
+- **Email**: [your-email@example.com]
+
+**Information to include:**
+1. Your name and contact information
+2. The specific content/files that infringe
+3. Proof of ownership (patent, copyright, etc.)
+4. What action you request (removal, modification, attribution)
+
+**Commitment:**
+- ✅ Response within 7 days
+- ✅ Prompt removal or modification of infringing content
+- ✅ Good faith effort to resolve any issues
+
+### Disclaimer
+
+**THIS PROJECT IS PROVIDED FOR EDUCATIONAL AND DEMONSTRATION PURPOSES ONLY.**
+
+**Users of this code are responsible for:**
+
+1. ✅ **Verifying all third-party licenses** before commercial use
+2. ✅ **Complying with applicable laws** in their jurisdiction (GDPR, CCPA, PIPL, etc.)
+3. ✅ **Obtaining necessary permissions** for biometric data processing
+4. ✅ **Ensuring model license compliance** - Check UltraFace repository for latest license terms
+
+**NOTICE:**
+- ⚠️ The UltraFace model used in this project belongs to its original authors
+- ⚠️ This repository does NOT grant any additional rights to the UltraFace model
+- ⚠️ Commercial use requires verification of model licensing terms
+- ⚠️ The repository owner makes NO warranty regarding model usage rights
+
+**Use at your own risk. The repository owner is not responsible for:**
+- Legal issues arising from improper use of models or code
+- Patent, copyright, or trademark infringements by users
+- Violations of biometric data regulations in your jurisdiction
+
+### Recommended Actions Before Commercial Use
+
+Before using this implementation in a commercial product:
+
+1. **Review All Licenses** - Check MNN, OpenCV, and UltraFace licenses
+2. **Contact Model Authors** - Get explicit permission if terms are unclear
+3. **Legal Review** - Consult with a lawyer specializing in IP/tech law
+4. **Check Regulations** - Verify biometric data laws in your target markets
+5. **Consider Alternatives** - Use commercial SDKs that provide indemnification
+
+### Alternative Commercially-Licensed Models
+
+For production use, consider models with clear commercial terms:
+
+| Model | License | Notes |
+|--------|----------|-------|
+| **MediaPipe Face Detection** | Apache 2.0 | Google officially supported |
+| **TensorFlow.js Models** | Apache 2.0 | Well-documented commercial terms |
+| **Commercial SDKs** | Various EULAs | Provide legal protection & support |
+
+---
+
+**For questions about licensing or to report potential issues, please [open an issue](https://github.com/[your-username]/mnn_test/issues).**
+
+**Last Updated**: [Current Date]
