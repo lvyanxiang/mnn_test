@@ -13,6 +13,14 @@ public class AppDelegate: ExpoAppDelegate {
     _ application: UIApplication,
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
   ) -> Bool {
+    // Initialize model path for iOS face detection
+    if let modelPath = Bundle.main.path(forResource: "RFB-320", ofType: "mnn") {
+      NSLog("[AppDelegate] Model found at: \(modelPath)")
+      iOSModelLoader.setModelPath(modelPath)
+    } else {
+      NSLog("[AppDelegate] ERROR: Model file RFB-320.mnn not found in bundle!")
+    }
+
     let delegate = ReactNativeDelegate()
     let factory = ExpoReactNativeFactory(delegate: delegate)
     delegate.dependencyProvider = RCTAppDependencyProvider()

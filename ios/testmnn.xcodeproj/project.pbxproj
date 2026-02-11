@@ -14,6 +14,13 @@
 		6ED9359073E594D90CC58346 /* libPods-testmnn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C2EC1CBBDBD163065E3A1D5 /* libPods-testmnn.a */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
+		F8A8A6852F3B068A00435BD5 /* NativeSampleModuleProvider.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8A8A6842F3B068A00435BD5 /* NativeSampleModuleProvider.mm */; };
+		F8A8A6872F3B068B00435BD5 /* NativeSampleModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8A8A6812F3B059300435BD5 /* NativeSampleModule.cpp */; };
+		F8A8A6872F3B10CF00435BD5 /* libMNN.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A8A6862F3B10CF00435BD5 /* libMNN.a */; };
+		F8A8A6892F3B110000435BD6 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8A8A6882F3B110000435BD6 /* opencv2.framework */; };
+		F8A8A68A2F3B120000435BD7 /* RFB-320.mnn in Resources */ = {isa = PBXBuildFile; fileRef = F8A8A68E2F3B120300435BD7 /* RFB-320.mnn */; };
+		F8A8A68B2F3B120100435BD7 /* iOSModelLoader.mm in Sources */ = {isa = PBXBuildFile; fileRef = F8A8A68D2F3B120200435BD7 /* iOSModelLoader.mm */; };
+		F8A8A67F2F3B059300435BD6 /* NativeFaceDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8A8A67F2F3B059300435BD5 /* NativeFaceDetector.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,17 @@
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = testmnn/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* testmnn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "testmnn-Bridging-Header.h"; path = "testmnn/testmnn-Bridging-Header.h"; sourceTree = "<group>"; };
+		F8A8A67E2F3B059300435BD5 /* NativeFaceDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeFaceDetector.h; sourceTree = "<group>"; };
+		F8A8A67F2F3B059300435BD5 /* NativeFaceDetector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeFaceDetector.cpp; sourceTree = "<group>"; };
+		F8A8A6802F3B059300435BD5 /* NativeSampleModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeSampleModule.h; sourceTree = "<group>"; };
+		F8A8A6812F3B059300435BD5 /* NativeSampleModule.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = NativeSampleModule.cpp; sourceTree = "<group>"; };
+		F8A8A6832F3B068A00435BD5 /* NativeSampleModuleProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NativeSampleModuleProvider.h; sourceTree = "<group>"; };
+		F8A8A6842F3B068A00435BD5 /* NativeSampleModuleProvider.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = NativeSampleModuleProvider.mm; sourceTree = "<group>"; };
+		F8A8A6862F3B10CF00435BD5 /* libMNN.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMNN.a; path = libs/libMNN.a; sourceTree = "<group>"; };
+		F8A8A6882F3B110000435BD6 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = libs/opencv2.framework; sourceTree = "<group>"; };
+		F8A8A68E2F3B120300435BD7 /* RFB-320.mnn */ = {isa = PBXFileReference; lastKnownFileType = file; name = RFB-320.mnn; path = RFB-320.mnn; sourceTree = "<group>"; };
+		F8A8A68D2F3B120200435BD7 /* iOSModelLoader.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = iOSModelLoader.mm; sourceTree = "<group>"; };
+		F8A8A68C2F3B120100435BD7 /* iOSModelLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSModelLoader.h; sourceTree = "<group>"; };
 		F97106121AEB222D8375EBE6 /* Pods-testmnn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testmnn.debug.xcconfig"; path = "Target Support Files/Pods-testmnn/Pods-testmnn.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +55,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8A8A6872F3B10CF00435BD5 /* libMNN.a in Frameworks */,
+				F8A8A6892F3B110000435BD6 /* opencv2.framework in Frameworks */,
 				6ED9359073E594D90CC58346 /* libPods-testmnn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -69,6 +89,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F8A8A6862F3B10CF00435BD5 /* libMNN.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				8C2EC1CBBDBD163065E3A1D5 /* libPods-testmnn.a */,
 			);
@@ -85,6 +106,11 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				F8A8A68D2F3B120200435BD7 /* iOSModelLoader.mm */,
+				F8A8A68C2F3B120100435BD7 /* iOSModelLoader.h */,
+				F8A8A6832F3B068A00435BD5 /* NativeSampleModuleProvider.h */,
+				F8A8A6842F3B068A00435BD5 /* NativeSampleModuleProvider.mm */,
+				F8A8A6822F3B059300435BD5 /* shared */,
 				13B07FAE1A68108700A75B9A /* testmnn */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
@@ -130,6 +156,18 @@
 			name = Supporting;
 			path = testmnn/Supporting;
 			sourceTree = "<group>";
+		};
+		F8A8A6822F3B059300435BD5 /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				F8A8A67E2F3B059300435BD5 /* NativeFaceDetector.h */,
+				F8A8A67F2F3B059300435BD5 /* NativeFaceDetector.cpp */,
+				F8A8A6802F3B059300435BD5 /* NativeSampleModule.h */,
+				F8A8A6812F3B059300435BD5 /* NativeSampleModule.cpp */,
+			);
+			name = shared;
+			path = ../shared;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -196,6 +234,7 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
 				2BC2D29D92F64038F402EDD1 /* PrivacyInfo.xcprivacy in Resources */,
+				F8A8A68A2F3B120000435BD7 /* RFB-320.mnn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +364,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
+				F8A8A6852F3B068A00435BD5 /* NativeSampleModuleProvider.mm in Sources */,
+				F8A8A6872F3B068B00435BD5 /* NativeSampleModule.cpp in Sources */,
+				F8A8A67F2F3B059300435BD6 /* NativeFaceDetector.cpp in Sources */,
+				F8A8A68B2F3B120100435BD7 /* iOSModelLoader.mm in Sources */,
 				1C5CAB23DF7517A34F19CCAA /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,6 +396,18 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
@@ -388,6 +443,18 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
+				);
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/libs",
 				);
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = (
